@@ -5,6 +5,8 @@ import Image from "next/image";
 import React from "react";
 import card from "../../public/images/profile/profile.jpeg"
 import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 
 const about = () => {
   return (
@@ -14,7 +16,7 @@ const about = () => {
         <meta name="description" content="contains information about me"></meta>
       </Head>
       <main className="w-full flex flex-col items-center justify-center ">
-        <Layout className="pt-16">
+        <Layout className="pt-16 ">
           <AnimatedText text="Passion Fuels Purpose! " className="mb-10" />
           <div className="grid w-full grid-cols-8 gap-16">
             <div className="col-span-5 flex flex-col items-start  justify-start -mt-5">
@@ -50,7 +52,9 @@ const about = () => {
             </div>
           </div>
           <Skills/>
-        </Layout>
+          <Experience/>
+          <Education/>
+        </Layout >
       </main>
     </>
   );
