@@ -4,6 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import card from "../../public/images/profile/profile.jpeg"
+import Skills from "@/components/Skills";
 
 const about = () => {
   return (
@@ -48,6 +49,7 @@ const about = () => {
                 <Image src={card} alt="sneha sahu" className="w-full h-auto rounded-2xl "/>
             </div>
           </div>
+          <Skills/>
         </Layout>
       </main>
     </>
