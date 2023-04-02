@@ -1,16 +1,18 @@
 import React from 'react'
 import { CircularText } from './Icons'
 import Link from 'next/link'
+import Tag from "../../public/images/svgs/tag.png"
+import Image from 'next/image'
 
 
 
 const HireMe = () => {
   return (
     <div className='fixed right-4 bottom-4 flex items-center justify-center overflow-hidden '>
-        <div className='w-48 h-auto flex items-center justify-center relative'>
-            <CircularText className={"fill-dark animate-spin-slow"}/>
+        <div className='w-80 h-auto flex items-center justify-center relative'>
+            <Image src={Tag} className={"fill-dark animate-pulse "}/>
             <Link href="mailto:s.sneha1712@gmail.com" className='flex items-center justify-center absolute
-            left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark text-light shadow-md border border-solid border-dark w-20 h-20 rounded-full
+            left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark -mt-[20px] -ml-[0.35rem] text-light shadow-md border border-solid border-dark w-[4rem] h-[4rem] rounded-full text-sm
             '>Hire Me</Link>
         </div>
     </div>

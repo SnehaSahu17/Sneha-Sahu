@@ -32,7 +32,7 @@ export default function Home() {
               <p className="my-4 text-base font-medium">
                 As a skilled Frontend Developer, I am dedicated to turning ideas
                 into innovative web applications. Explore my latest projects and
-                articles, showcasing my expertise in React.js and web
+                articles, showcasing my expertise in React.js and Frontend
                 development.
               </p>
               <div className="flex items-center self-start mt-2">
@@ -48,6 +48,7 @@ export default function Home() {
                 <Link href="mailto:s.sneha1712@gmail.com" target="_blank" className="ml-4 text-lg capitalize underline font-medium text-dark">
                   Contact
                 </Link>
+                
               </div>
             </div>
           </div>
