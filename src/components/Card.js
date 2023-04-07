@@ -2,17 +2,23 @@ import Image from "next/image";
 import maze from "../../public/images/projects/maze.png"
 import { GithubIcon } from "@/components/Icons";
 import Link from "next/link";
-function Card({src,title}) {
+function Card({src,title,key_techs,description,link,github,color1,color2,color3}) {
     return (
       <>
-       <div className=" ml-12 p-4 flex flex-col w-[400px] h-[500px] rounded-lg border-2 border-solid border-gray-300 bg-gradient-to-b from-white via-pink-200 to-pink-700">
-            <Image src={src} alt="img" className="w-full h-[50%]"/>
+       <div className={`p-4 flex flex-col w-[400px] h-[500px] rounded-lg border-2 border-solid border-gray-300 bg-gradient-to-b  ${color1} ${color2} ${color3} `}>
+            <Image src={src} alt="img" className="w-full h-[50%] "/>
             <h2 className="text-dark font-bold text-2xl mt-2 capitalize">{title}</h2>
-            <div className="flex items-center justify-start my-2 text-dark ">
-            <span  className="bg-[#00000033] p-1 rounded-md mr-2">#html</span>
-            <span  className="bg-[#00000033] p-1 rounded-md mr-2">#html</span>
-            <span  className="bg-[#00000033] p-1 rounded-md mr-2">#html</span>
-            </div>
+            
+            <div className='my-2 flex flex-wrap gap-2 text-dark'>
+                    {key_techs && key_techs.map((tag) => (
+                        <button
+                            key={`${tag}`}
+                            className={`bg-[#00000033] p-1 rounded-md mr-2 hover:scale-110 hover:bg-[#f1dede4f]`}
+                        >
+                            #{tag}
+                        </button>
+                    ))}
+                    </div>
             <p className="text-base mb-2">
             Large scale Ecommerce website for a South African based client with 3 brick & mortar locations and over 3000 products.
             </p>
