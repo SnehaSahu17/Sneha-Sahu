@@ -12,27 +12,28 @@ import Carousel from "@/components/Carousel";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 relative ">
+    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light dark:bg-dark dark:border-light shadow-2xl p-12 relative ">
       <div className="absolute top-0 -right-3 -z-10 w-[102%]
-      h-[103%] rounded-[2rem] bg-dark"/>
+      h-[103%] rounded-[2rem] bg-dark dark:bg-light"/>
       <Link
         href={link}
         target="_blank"
         className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <Image src={img} alt={title} className="w-full h-auto  hover:scale-105 duration-300" />
       </Link>
-      <div className="w-1/2 flex flex-col items-start justify-between pl-6">
-        <span className="text-primary font-medium text-xl">{type}</span>
+      <div className="w-1/2 flex flex-col items-start justify-between pl-6 text-dark dark:text-light">
+        <span className="text-primary dark:text-primaryDark font-medium text-xl">{type}</span>
         <Link href={link} target="_blank" className="hover:underline underline-offset-2">
-          <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-4xl font-bold" >{title}</h2>
         </Link>
-        <p className="my-2 font-medium text-dark">{summary}</p>
+        <p className="my-2 font-medium ">{summary}</p>
         <div className="flex items-center mt-2">
           <Link href={github} target="_blank" className="w-10">
             <GithubIcon />
           </Link>
-          <Link href={link} target="_blank" className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold">
+          <Link href={link} target="_blank" className="ml-4 rounded-lg  p-2 px-6 text-lg font-semibold border-2 border-solid border-transparent bg-dark text-light hover:text-dark hover:border-dark hover:bg-light
+              dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light">
             Visit Project
           </Link>
         </div>

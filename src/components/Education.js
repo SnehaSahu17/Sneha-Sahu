@@ -16,11 +16,11 @@ const Details = ({ degree, time, address, work ,marks}) => {
         transition={{ duration: 0.5, type: "spring" }} 
         className="w-[90%]"
       >
-        <h3 className="capitalize text-2xl font-bold">{degree}</h3>
-        <span className="capitalize font-medium text-dark/75">
+        <h3 className="capitalize text-2xl font-bold dark:text-light">{degree}</h3>
+        <span className="capitalize font-medium text-dark/75 dark:text-light/75">
           {time} | {address}
         </span>
-        <p className="font-semibold w-full">{marks}</p>
+        <p className="font-semibold w-full dark:text-light">{marks}</p>
       </motion.div>
     </li>
   );
@@ -37,7 +37,7 @@ const Education = () => {
       <div ref={ref} className="w-[75%] mx-auto relative ">
       <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top"
+          className="absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-primaryDark origin-top"
         />
        <ul className="w-full flex flex-col justify-between items-center ml-4 ">
           <Details

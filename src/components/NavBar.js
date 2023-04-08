@@ -13,7 +13,7 @@ const CustomLink = ({ href, title, className = "" }) => {
     <Link href={href} className={`${className} relative group`}>
       {title}
       <span
-        className={`absolute h-[1px] bg-dark  inline-block left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
+        className={`absolute h-[1px] bg-dark dark:bg-light inline-block left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
           router.asPath === href ? "w-full" : "w-0"
         }`}
       >
@@ -27,18 +27,18 @@ const NavBar = () => {
 
   const [mode,setmode] = useThemeSwitcher();
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-start justify-between">
+    <header className="w-full px-32 py-8 font-medium flex items-start justify-between dark:text-light">
       <nav>
         <CustomLink href="/" title="Home" className="mr-4" />
         <CustomLink href="/about" title="About" className="mx-4" />
         <CustomLink href="/projects" title="Projects" className="ml-4" />
       </nav>
 
-      <nav className="flex items-center justify-center flex-wrap">
+      <nav className="flex items-center justify-center flex-wrap ">
         <motion.a
           href="https://github.com/SnehaSahu17"
           target="_blank"
-          className="w-6 mr-3"
+          className="w-6 mr-3 dark:text-light"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
         >
@@ -71,7 +71,7 @@ const NavBar = () => {
         >
           <DribbbleIcon />
         </motion.a>
-        <button onClick={() => { setmode(mode==="light"?"dark":"light")}}>
+        <button onClick={() => { setmode(mode==="light"?"dark":"light")}} className="ml-4 flex items-center justify-center rounded-full p-1 dark:bg-light dark:text-dark">
           {
             mode === "dark" ?
             <SunIcon className={"fill-dark"}/> :

@@ -8,11 +8,11 @@ const Details = ({position,company,time,address,work}) => {
         <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[75%] mx-auto flex flex-col items-center justify-between'>
             <LiIcon reference={ref}/>
             <motion.div initial={{y:50}} whileInView={{y:0}} transition={{duration:0.5, type:"spring"}} >
-                <h3 className='capitalize text-2xl font-bold'>{position}&nbsp;<a href="#" className='text-primary capitalize'>@{company}</a></h3>
-                <span className='capitalize font-medium text-dark/75'>
+                <h3 className='capitalize text-2xl font-bold dark:text-light'>{position}&nbsp;<a href="#" className='text-primary capitalize dark:text-primaryDark '>@{company}</a></h3>
+                <span className='capitalize font-medium text-dark/75 dark:text-light/75'>
                     {time} | {address}
                 </span>
-                <p className='font-medium w-[90%]'>{work}</p>
+                <p className='font-medium w-[90%] dark:text-light'>{work}</p>
             </motion.div>
         </li>
        )
@@ -31,7 +31,7 @@ const Experience = () => {
         Experience
         </h2>
         <div ref={ref } className='w-[75%] mx-auto relative '>
-            <motion.div style={{scaleY:scrollYProgress }} className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top'/>
+            <motion.div style={{scaleY:scrollYProgress }} className='absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-primaryDark origin-top'/>
             <ul className='w-full flex flex-col items-start justify-between ml-4'>
                 <Details position="Web Developer" company="Webwiz NITR" time="2022-Present" address="NIT Rourkela" work="Technical member of the official web development club of my institute.Contributed in the making of various offcial websites for the insitute and hackathons.Mentored juniors in paving their way into web development. "/>
                 <Details position="Student Mentor" company="Institute Counselling Services(ICS)" time="2022-Present" address="NIT Rourkela" work="Helping juniors bridge the gap between academic and personal life.Conducted various interactive sessions on academic excellance and mental health."/>
