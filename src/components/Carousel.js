@@ -26,34 +26,34 @@ const scrollRight = () => {
       </div>
       <div id="content" className="carousel p-2  space-x-10 flex items-center justify-start overflow-x-auto scroll-smooth  scrollbar-hide">
         <div>
-          <Card src={maze} title="maze runner" key_techs={["HTML","CSS","Javascript"]} color1={"from-[#EB5E6E]"} color2={"via-[#F49671]"} color3={"to-[#FAC172]"}/>
+        <Card src={maze} title="maze runner" key_techs={["html","css","javascript"]} color1={"from-[#000000]"} color2={"via-[#868B8C]"} color3={"to-[#EAF1F1]"} />
         </div>
         <div>
-          <Card src={maze} title="maze runner" key_techs={["html","css","javascript"]} color1={"from-[#CE1D61]"} color2={"via-[#E07BA4]"} color3={"to-[#F4E5F0]"}/>
+          <Card src={maze} title="maze runner" key_techs={["html","css","javascript"]} color1={"from-[#000000]"} color2={"via-[#868B8C]"} color3={"to-[#EAF1F1]"} />
         </div>
         <div>
-          <Card src={maze} title="maze runner" key_techs={["html","css","javascript"]} color1={"from-[#CE1D61]"} color2={"via-[#E07BA4]"} color3={"to-[#F4E5F0]"} />
+          <Card src={maze} title="maze runner" key_techs={["html","css","javascript"]} color1={"from-[#000000]"} color2={"via-[#868B8C]"} color3={"to-[#EAF1F1]"} />
         </div>
         <div>
-          <Card src={maze} title="maze runner" key_techs={["html","css","javascript"]} color1={"from-[#CE1D61]"} color2={"via-[#E07BA4]"} color3={"to-[#F4E5F0]"} />
+          <Card src={maze} title="maze runner" key_techs={["html","css","javascript"]} color1={"from-[#000000]"} color2={"via-[#868B8C]"} color3={"to-[#EAF1F1]"} />
         </div>
         <div>
-          <Card src={maze} title="maze runner" key_techs={["html","css","javascript"]} color1={"from-[#CE1D61]"} color2={"via-[#E07BA4]"} color3={"to-[#F4E5F0]"}/>
+          <Card src={maze} title="maze runner" key_techs={["html","css","javascript"]} color1={"from-[#000000]"} color2={"via-[#868B8C]"} color3={"to-[#EAF1F1]"}/>
         </div>
         <div>
-          <Card src={maze} title="maze runner" key_techs={["html","css","javascript"]} color1={"from-[#CE1D61]"} color2={"via-[#E07BA4]"} color3={"to-[#F4E5F0]"} />
+          <Card src={maze} title="maze runner" key_techs={["html","css","javascript"]} color1={"from-[#000000]"} color2={"via-[#868B8C]"} color3={"to-[#EAF1F1]"} />
         </div>
         <div>
-          <Card src={maze} title="maze runner" key_techs={["html","css","javascript"]} color1={"from-[#CE1D61]"} color2={"via-[#E07BA4]"} color3={"to-[#F4E5F0]"}/>
+          <Card src={maze} title="maze runner" key_techs={["html","css","javascript"]}color1={"from-[#000000]"} color2={"via-[#868B8C]"} color3={"to-[#EAF1F1]"}/>
         </div>
         <div>
-          <Card src={maze} title="maze runner" key_techs={["html","css","javascript"]} color1={"from-[#CE1D61]"} color2={"via-[#E07BA4]"} color3={"to-[#F4E5F0]"} />
+          <Card src={maze} title="maze runner" key_techs={["html","css","javascript"]}color1={"from-[#000000]"} color2={"via-[#868B8C]"} color3={"to-[#EAF1F1]"}/>
         </div>
         <div>
-          <Card src={maze} title="maze runner" key_techs={["html","css","javascript"]} color1={"from-[#CE1D61]"} color2={"via-[#E07BA4]"} color3={"to-[#F4E5F0]"}/>
+          <Card src={maze} title="maze runner" key_techs={["html","css","javascript"]} color1={"from-[#000000]"} color2={"via-[#868B8C]"} color3={"to-[#EAF1F1]"}/>
         </div>
         <div>
-          <Card src={maze} title="maze runner" key_techs={["html","css","javascript"]} color1={"from-[#CE1D61]"} color2={"via-[#E07BA4]"} color3={"to-[#F4E5F0]"} />
+          <Card src={maze} title="maze runner" key_techs={["html","css","javascript"]} color1={"from-[#000000]"} color2={"via-[#868B8C]"} color3={"to-[#EAF1F1]"} />
         </div>
       </div>
     </div>

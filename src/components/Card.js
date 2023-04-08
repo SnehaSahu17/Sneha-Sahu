@@ -5,9 +5,11 @@ import Link from "next/link";
 function Card({src,title,key_techs,description,link,github,color1,color2,color3}) {
     return (
       <>
-       <div className={`p-4 flex flex-col w-[400px] h-[500px] rounded-lg border-2 border-solid border-gray-300 bg-gradient-to-b  ${color1} ${color2} ${color3} `}>
+       <div className={`p-4 flex flex-col w-[400px] h-[500px] rounded-lg border-2 border-solid border-light bg-gradient-to-b  ${color1} ${color2} ${color3} `}>
+       <div className="absolute center top-36 -left-2 -z-10 w-[102%]
+      h-[80%] rounded-[2rem] bg-dark "/>
             <Image src={src} alt="img" className="w-full h-[50%] "/>
-            <h2 className="text-dark font-bold text-2xl mt-2 capitalize">{title}</h2>
+            <h2 className="text-dark font-bold text-2xl mt-2 capitalize hover:underline cursor-pointer ">{title}</h2>
             
             <div className='my-2 flex flex-wrap gap-2 text-dark'>
                     {key_techs && key_techs.map((tag) => (
