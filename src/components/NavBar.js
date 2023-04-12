@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import useThemeSwitcher from "./hooks/useThemeSwitcher";
 import { MoonIcon } from "./Icons";
 
+//Desktop view
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
   return (
@@ -23,6 +24,7 @@ const CustomLink = ({ href, title, className = "" }) => {
   );
 };
 
+//Mobile View
 const CustomMobileLink = ({ href, title, className = "" ,toggle}) => {
   const router = useRouter();
   const handleClick = () => {
@@ -54,13 +56,14 @@ const NavBar = () => {
 
   return (
     <header className="w-full px-32 py-8 font-medium flex items-start justify-between dark:text-light relative">
-
+      {/* hambuger menu */}
       <button className="flex-col justify-center items-center hidden lg:flex" onClick={handleClick}>
         <span className={`bg-dark dark:bg-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm  ${isOpen ? 'rotate-45 translate-y-2.5' : '-translate-y-0.5'}`}></span>
         <span className={`bg-dark dark:bg-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
         <span className={`bg-dark dark:bg-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm translate-y-0.5 ${isOpen ? '-rotate-45 -translate-y-0' : 'translate-y-0.5'}`}></span>
       </button>
 
+      
       <div className="w-full flex justify-between items-center lg:hidden">
       <nav >
         <CustomLink href="/" title="Home" className="mr-4" />
@@ -117,6 +120,7 @@ const NavBar = () => {
 
       </div>
       
+      {/* Mobile View Navbar Content */}
       {
         isOpen?
         <motion.div
@@ -180,7 +184,7 @@ const NavBar = () => {
       }
 
      
-
+      {/* Logo */}
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">
         <Logo />
       </div>
