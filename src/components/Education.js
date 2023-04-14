@@ -1,6 +1,7 @@
 import React, { use, useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import LiIcon from "./LiIcon";
+import AnimatedText from "@/components/AnimatedText";
 
 const Details = ({ degree, time, address, work ,marks}) => {
   const ref = useRef(null);
@@ -33,7 +34,7 @@ const Education = () => {
   });
   return (
     <div className="my-64">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center">Education</h2>
+      <AnimatedText text="Education" className="mb-20 !text-8xl !mt-20 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8" />
       <div ref={ref} className="w-[75%] mx-auto relative ">
       <motion.div
           style={{ scaleY: scrollYProgress }}

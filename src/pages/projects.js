@@ -8,6 +8,7 @@ import Link from "next/link";
 import airbnb from "../../public/images/projects/airbnb.png";
 import Carousel from "@/components/Carousel";
 import { motion } from "framer-motion";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
@@ -71,6 +72,7 @@ const projects = () => {
         <title>Sneha Sahu | Projects Page</title>
         <meta name="description" content="contains information about me"></meta>
       </Head>
+      <TransitionEffect/>
       <main className="w-full flex flex-col items-center justify-center ">
         <Layout className="pt-16 ">
           <AnimatedText text="Projects" className="mb-10" />

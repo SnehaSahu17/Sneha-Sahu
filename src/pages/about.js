@@ -7,6 +7,7 @@ import card from "../../public/images/profile/profile.jpeg"
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const about = () => {
   return (
@@ -15,30 +16,31 @@ const about = () => {
         <title>Sneha Sahu | About Page</title>
         <meta name="description" content="contains information about me"></meta>
       </Head>
+      <TransitionEffect/>
       <main className="w-full flex flex-col items-center justify-center ">
         <Layout className="pt-16 dark:text-light ">
-          <AnimatedText text="Passion Fuels Purpose! " className="mb-10" />
+          <AnimatedText text="Passion Fuels Purpose! " className="mb-10 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8" />
           <div className="grid w-full grid-cols-8 gap-16 ">
-            <div className="col-span-5 flex flex-col items-start  justify-start -mt-5">
+            <div className="col-span-5 md:col-span-4 sm:col-span-8 flex flex-col items-start text-xl lg:text-lg sm:mt-5 md:text-justify justify-start -mt-5">
               <h2
-                className="mb-4 text-2xl font-bold uppercase text-dark/75 
+                className="mb-4 text-2xl  font-bold uppercase text-dark/75 sm:mx-auto
             "
               >
                 about me
               </h2>
-              <p className="font-medium text-xl">
+              <p className="font-medium ">
                 Hi, I'm <b>CodeBucks</b>, a web developer and UI/UX designer with a
                 passion for creating beautiful, functional, and user-centered
                 digital experiences. With 4 years of experience in the field. I
                 am always looking for new and innovative ways to bring my
                 clients' visions to life.
               </p>
-              <p className="font-medium my-5  text-xl" >
+              <p className="font-medium my-5 " >
                 I believe that design is about more than just making things look
                 pretty – it's about solving problems and creating intuitive,
                 enjoyable experiences for users.{" "}
               </p>
-              <p className="font-medium  text-xl ">
+              <p className="font-medium">
                 Whether I'm working on a website, mobile app, or other digital
                 product, I bring my commitment to design excellence and
                 user-centered thinking to every project I work on. I look
@@ -47,7 +49,7 @@ const about = () => {
               </p>
             </div>
             
-            <div className="col-span-3 relative rounded-2xl h-max border-2 border-solid border-dark bg-light dark:border-light dark:bg-dark p-8 -mt-24">
+            <div className="col-span-3 sm:col-span-8 md:col-span-4 relative rounded-2xl h-max border-2 border-solid border-dark bg-light dark:border-light dark:bg-dark p-8 sm:mt-0 md:mt-[50%] lg:mt-8 xl:mt-0 2xl:-mt-24">
                 <Image src={card} alt="sneha sahu" className="w-full h-auto rounded-2xl " priority
                 sizes="(max-width: 768px) 100vw
                         (max-width: 1200px) 50vw
