@@ -32,7 +32,7 @@ export default function Home() {
             </div>
             <div className="w-[55%] flex flex-col items-center self-center lg:w-full lg:text-center ">
               <AnimatedText
-                text="Turning Vision Into Reality With Code And Design."
+                text="Bringing design to life with clean and efficient code."
                 className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
@@ -43,7 +43,7 @@ export default function Home() {
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
-                  href="/121CE1045_SNEHA.pdf"
+                  href="/Sneha_Sahu_Resume.pdf"
                   target="_blank"
                   className="flex items-center  p-2.5 px-6 text-lg rounded-lg font-semibold 
                border-2 border-solid border-transparent bg-dark text-light hover:text-dark hover:border-dark hover:bg-light

@@ -27,7 +27,7 @@ const Experience = () => {
         }
     )
   return (
-    <div className='my-64'>
+    <div className='my-32'>
          <AnimatedText text="Experience" className="mb-20 !text-8xl !mt-20 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8" />
         <div ref={ref } className='w-[75%] mx-auto relative lg:w-[90%] md:w-full'>
             <motion.div style={{scaleY:scrollYProgress }} className='absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-primaryDark origin-top'/>

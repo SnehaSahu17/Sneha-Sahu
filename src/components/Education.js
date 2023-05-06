@@ -33,7 +33,7 @@ const Education = () => {
     offset: ["start end", "center start"],
   });
   return (
-    <div className="my-64">
+    <div className="my-32">
       <AnimatedText text="Education" className="mb-20 !text-8xl !mt-20 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8" />
       <div ref={ref} className="w-[75%] mx-auto relative ">
       <motion.div
