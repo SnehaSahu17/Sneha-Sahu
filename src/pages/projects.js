@@ -6,6 +6,7 @@ import React from "react";
 import { GithubIcon } from "@/components/Icons";
 import Link from "next/link";
 import airbnb from "../../public/images/projects/airbnb.png";
+import api from "../../public/images/projects/api-store.png";
 import Carousel from "@/components/Carousel";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
@@ -76,24 +77,25 @@ const projects = () => {
       <main className="w-full flex flex-col items-center justify-center ">
         <Layout className="pt-16 ">
           <AnimatedText text="Projects" className="mb-10" />
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-7xl mx-auto ">
             <FeaturedProject
-              type="Website Clone"
-              title="AirBnb 2.0"
-              summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth page transitions, cool background effects, unique design and it is mobile responsive."
-              img={airbnb}
-              link="https://airbnb-clone-wheat-three.vercel.app/"
-              github="https://github.com/SnehaSahu17/Airbnb-Clone"
+              type="API Integration"
+              title="API Store"
+              summary="Built a website that shows a list of APIs so that you can use the API for a fun project; this project has search functionality and filters. This is built using ReactJs, Tailwind CSS and Publicapis API."
+              img={api}
+              link="https://jade-puppy-6f6906.netlify.app/"
+              github="https://github.com/SnehaSahu17/Api-Store"
             />
           </div>
           <Carousel />
+          
           <div className="max-w-7xl mx-auto mt-10">
             <FeaturedProject
               type="Website Clone"
               title="AirBnb 2.0"
-              summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth page transitions, cool background effects, unique design and it is mobile responsive."
+              summary="A cloned website of AirBnb using Next JS and Tailwind CSS. It has smooth page transitions,it is mobile responsive."
               img={airbnb}
-              link="https://airbnb-clone-wheat-three.vercel.app/"
+              link="https://airbnb-clone-nzej.vercel.app/"
               github="https://github.com/SnehaSahu17/Airbnb-Clone"
             />
           </div>
