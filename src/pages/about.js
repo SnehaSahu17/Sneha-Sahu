@@ -21,7 +21,7 @@ const about = () => {
         <Layout className="pt-16 dark:text-light ">
           <AnimatedText text="Passion Fuels Purpose! " className="mb-10 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8" />
           <div className="grid w-full grid-cols-8 gap-16 ">
-            <div className="col-span-5 md:col-span-4 sm:col-span-8 flex flex-col items-start text-xl lg:text-lg sm:mt-5 md:text-justify justify-start -mt-5">
+            <div className="col-span-5 md:col-span-4 sm:col-span-8 flex flex-col items-start text-xl lg:text-lg sm:mt-5 md:text-justify justify-start mt-14">
               <h2
                 className="mb-4 text-2xl  font-bold uppercase text-dark/75 sm:mx-auto
             "
@@ -46,7 +46,7 @@ const about = () => {
               </p>
             </div>
             
-            <div className="col-span-3 sm:col-span-8 md:col-span-4 relative rounded-2xl h-max border-2 border-solid border-dark bg-light dark:border-light dark:bg-dark p-8 sm:mt-0 md:mt-[50%] lg:mt-8 xl:mt-0 2xl:-mt-20">
+            <div className="col-span-3 sm:col-span-8 md:col-span-4 relative rounded-2xl h-max border-2 border-solid border-dark bg-light dark:border-light dark:bg-dark p-8 sm:mt-0 md:mt-[50%] lg:mt-8 xl:mt-0 2xl:-mt-2">
                 <Image src={card} alt="sneha sahu" className="w-full h-auto rounded-2xl " priority
                 sizes="(max-width: 768px) 100vw
                         (max-width: 1200px) 50vw
