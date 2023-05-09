@@ -8,7 +8,7 @@ import Image from 'next/image'
 
 const HireMe = () => {
   return (
-    <div className='fixed right-4 bottom-4 flex items-center justify-center overflow-hidden md:-right-16 md:left-auto md:-top-12 md:bottom-auto  lg:top-[70%] xl:top-[75%]'>
+    <div className='fixed right-4 bottom-4 flex items-center justify-center overflow-hidden md:-right-16 md:left-auto md:-top-12 md:bottom-auto  lg:top-[70%] xl:top-[75%] 2xl:top-[65%]'>
         <div className='w-80 h-auto flex items-center justify-center relative md:w-56'>
             <CircularText className={"fill-dark dark:fill-light animate-pulse "}/>
             <Link href="mailto:s.sneha1712@gmail.com" className='flex items-center justify-center absolute
