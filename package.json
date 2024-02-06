@@ -18,7 +18,10 @@
     "react-easy-swipe": "^0.0.23",
     "react-icons": "^4.8.0",
     "react-multi-carousel": "^2.8.3",
+    "react-scroll": "^1.9.0",
     "react-swipe": "^6.0.4",
+    "react-type-animation": "^3.2.0",
+    "styled-components": "^6.1.8",
     "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {
