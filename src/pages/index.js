@@ -1,13 +1,13 @@
-import Layout from "@/components/Layout";
+import Layout from "../components/Layout";
 import React, { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import profile2 from "../../public/images/profile/profile2.png";
-import AnimatedText from "@/components/AnimatedText";
+import AnimatedText from "../components/AnimatedText";
 import Link from "next/link";
-import { LinkArrow } from "@/components/Icons";
-import HireMe from "@/components/HireMe";
-import TransitionEffect from "@/components/TransitionEffect";
+import { LinkArrow } from "../components/NavBar/Icons";
+import HireMe from "../components/HireMe";
+import TransitionEffect from "../components/TransitionEffect";
 import {
   HeroContainer,
   HeroWrapper,
@@ -17,7 +17,6 @@ import {
   ScrollLink,
 } from "@/components/CssElements";
 import { TypeAnimation } from "react-type-animation";
-
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,7 +35,7 @@ export default function Home() {
 
       <TransitionEffect />
       <main className="flex items-center w-full min-h-screen  text-dark dark:text-light">
-        <Layout className="py-28 sm:pt-8">
+        <Layout className="py-28 sm:pt-28">
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/3 md:w-1/2">
               <Image
