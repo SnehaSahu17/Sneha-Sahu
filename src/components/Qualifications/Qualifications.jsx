@@ -11,14 +11,14 @@ import AnimatedText from "../AnimatedText";
 import { Bag, Calendar, Cap, Score } from "../Icons";
 
 const Qualification = () => {
-  const [isactive, setisactive] = useState("true");
+  const [isactive, setisactive] = useState(true);
 
   const handleSetActiveExp = () => {
-    setisactive("true");
+    setisactive(true);
   };
 
   const handleSetActiveEdu = () => {
-    setisactive("false");
+    setisactive(false);
   };
 
   return (
