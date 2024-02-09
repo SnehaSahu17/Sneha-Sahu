@@ -5,6 +5,8 @@ import { AnimatePresence } from "framer-motion";
 import { Montserrat } from "next/font/google";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { StyleSheetManager } from "styled-components";
+
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -23,7 +25,9 @@ export default function App({ Component, pageProps }) {
       >
         <NavBar />
         <AnimatePresence mode="wait">
-          <Component key={router.asPath} {...pageProps} />
+          <StyleSheetManager shouldForwardProp={(prop) => prop !== "isactive"}>
+            <Component key={router.asPath} {...pageProps} />
+          </StyleSheetManager>
         </AnimatePresence>
         <Footer />
       </main>

@@ -108,16 +108,16 @@ const projects = () => {
         <meta name="description" content="contains information about me"></meta>
       </Head>
       <TransitionEffect />
-      <main className="w-full flex flex-col items-center justify-center ">
+      <main className="w-full flex flex-col items-center justify-center no-scrollbar ">
         <Layout className="pt-28 sm:pt-32 lg:pt-32 dark:text-light ">
           <AnimatedText
             text="Projects"
             className="mb-10 !text-6xl sm:!text-6xl xs:!text-4xl "
           />
-          <div className="flex max-w-6xl gap-6  mx-auto items-center relative md:mb-10">
-            <div className="lg:w-full w-2/3  mx-auto">
+          <div className="flex xl:max-w-7xl max-w-6xl gap-6  mx-auto items-center relative md:mb-10">
+            <div className="xl:w-full w-2/3  mx-auto">
               <Swiper
-                slidesPerview={1.2}
+                slidesperview={1.2}
                 spaceBetween={20}
                 breakpoints={{
                   768: {
@@ -170,7 +170,7 @@ const projects = () => {
           </div>
 
           {/* other projects */}
-          <CommonSection >
+          <CommonSection>
             <AnimatedText
               text="My Technical Level"
               className="mb-10 !text-4xl sm:!text-2xl"
@@ -194,18 +194,24 @@ const SkillsContainer = styled(Grid)`
   grid-template-columns: repeat(3, 350px);
   column-gap: 3rem;
   justify-content: center;
+  
 
   /* BREAKPOINTS */
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(2, 400px);
+    column-gap: 3rem;
+    justify-content: center;
+  }
   /* For large devices */
   @media screen and (max-width: 992px) {
-    grid-template-columns: repeat(3, 350px);
+    grid-template-columns: repeat(2, 350px);
     column-gap: 3rem;
     justify-content: center;
   }
 
   /* For medium devices */
   @media screen and (max-width: 768px) {
-    grid-template-columns: repeat(2, 350px);
+    grid-template-columns: repeat(2, 300px);
     column-gap: 3rem;
     justify-content: center;
   }
@@ -214,6 +220,7 @@ const SkillsContainer = styled(Grid)`
   @media screen and (max-width: 576px) {
     /* TODO: does not work */
     grid-template-columns: 350px;
+    
   }
 
   /* For small devices */

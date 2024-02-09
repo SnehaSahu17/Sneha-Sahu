@@ -11,14 +11,14 @@ import AnimatedText from "../AnimatedText";
 import { Bag, Calendar, Cap, Score } from "../Icons";
 
 const Qualification = () => {
-  const [isActive, setIsActive] = useState(true);
+  const [isactive, setisactive] = useState("true");
 
   const handleSetActiveExp = () => {
-    setIsActive(true);
+    setisactive("true");
   };
 
   const handleSetActiveEdu = () => {
-    setIsActive(false);
+    setisactive("false");
   };
 
   return (
@@ -34,19 +34,19 @@ const Qualification = () => {
 
       <QualificationContainer>
         <QualificationTab>
-          <ButtonLink isActive={isActive} onClick={handleSetActiveExp}>
+          <ButtonLink isactive={isactive} onClick={handleSetActiveExp}>
             <Bag></Bag>
             Experience
           </ButtonLink>
-          <ButtonLink isActive={!isActive} onClick={handleSetActiveEdu}>
+          <ButtonLink isactive={!isactive} onClick={handleSetActiveEdu}>
             <Cap></Cap>
             Education
           </ButtonLink>
         </QualificationTab>
 
         <QualificationSections>
-          {isActive ? (
-            <QualificationContentExp isActive={isActive}>
+          {isactive ? (
+            <QualificationContentExp isactive={isactive}>
               <QualificationData>
                 <div>
                   <H3Title>Full-stack Developer</H3Title>
@@ -99,7 +99,7 @@ const Qualification = () => {
               </QualificationData>
             </QualificationContentExp>
           ) : (
-            <QualificationContentEdu isActive={!isActive}>
+            <QualificationContentEdu isactive={!isactive}>
               <QualificationData>
                 <div>
                   <H3Title>Civil Engineering</H3Title>
@@ -179,7 +179,7 @@ const ButtonLink = styled.div`
   display: flex;
   gap: 0.5rem;
   margin: 1rem;
-  border-bottom: ${({ isActive }) => (isActive ? "2px solid #bababa" : "none")};
+  border-bottom: ${({ isactive }) => (isactive ? "2px solid #bababa" : "none")};
   cursor: pointer;
   @media screen and (max-width: 576px) {
     margin: 0 0.75rem;
@@ -192,13 +192,13 @@ const QualificationSections = styled.div`
 `;
 
 const QualificationContentEdu = styled.div`
-  animation: ${({ isActive }) => (isActive ? "fadein 2s ease-in-out" : "none")};
-  display: ${({ isActive }) => (isActive ? "block" : "none")};
+  animation: ${({ isactive }) => (isactive ? "fadein 2s ease-in-out" : "none")};
+  display: ${({ isactive }) => (isactive ? "block" : "none")};
 `;
 
 const QualificationContentExp = styled.div`
-  animation: ${({ isActive }) =>
-    !isActive ? "fadein 2s ease-in-out" : "none"};
+  animation: ${({ isactive }) =>
+    !isactive ? "fadein 2s ease-in-out" : "none"};
   @keyframes fadein {
     0% {
       display: none;

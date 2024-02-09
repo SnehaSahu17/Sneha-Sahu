@@ -40,7 +40,7 @@ export const data = [
     deployed_url: "https://stree-vendors.vercel.app/",
     source_code_link: "https://github.com/SnehaSahu17/StreeVendor",
     description:
-      "Website for local commerce platform connecting women owned small businesses.",
+      "Website for local commerce platform for women owned small businesses.",
     key_techs: ["ReactJS", "Tailwind CSS", "Appwrite"],
   },
   {
