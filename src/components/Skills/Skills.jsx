@@ -6,9 +6,18 @@ import {
   CommonSubTitle,
 } from "../../common/GlobalStyles";
 import styled from "styled-components";
-import FrontEnd from "./FrontEnd";
-import BackEnd from "./BackEnd";
 import AnimatedText from "../AnimatedText";
+import {
+  SkillContent,
+  SkillTitle,
+  SkillBox,
+  SkillGroup,
+  SkillData,
+  SkillName,
+  SkillLevel,
+} from "./styles";
+import { Check } from "../Icons";
+
 const Skills = () => {
   return (
     <CommonSection>
@@ -22,9 +31,123 @@ const Skills = () => {
       />
 
       <SkillsContainer>
-        <FrontEnd />
+        {/* Frontend */}
+        <SkillContent>
+          <SkillTitle>Front-end Developer</SkillTitle>
 
-        <BackEnd />
+          <SkillBox>
+            <SkillGroup>
+              <SkillData>
+                <Check />
+                <div>
+                  <SkillName>HTML</SkillName>
+                  <SkillLevel>Advanced</SkillLevel>
+                </div>
+              </SkillData>
+
+              <SkillData>
+                <Check />
+                <div>
+                  <SkillName>TailwindCSS</SkillName>
+                  <SkillLevel>Advanced</SkillLevel>
+                </div>
+              </SkillData>
+
+              <SkillData>
+                <Check />
+                <div>
+                  <SkillName>JavaScript</SkillName>
+                  <SkillLevel>Advanced</SkillLevel>
+                </div>
+              </SkillData>
+            </SkillGroup>
+
+            <SkillGroup>
+              <SkillData>
+                <Check />
+                <div>
+                  <SkillName>Git</SkillName>
+                  <SkillLevel>Advanced</SkillLevel>
+                </div>
+              </SkillData>
+
+              <SkillData>
+                <Check />
+                <div>
+                  <SkillName>React</SkillName>
+                  <SkillLevel>Advanced</SkillLevel>
+                </div>
+              </SkillData>
+
+              <SkillData>
+                <Check />
+                <div>
+                  <SkillName>NEXTJS</SkillName>
+                  <SkillLevel>Advanced</SkillLevel>
+                </div>
+              </SkillData>
+            </SkillGroup>
+          </SkillBox>
+        </SkillContent>
+
+        {/* Backend */}
+        <SkillContent>
+          <SkillTitle>Back-end Developer</SkillTitle>
+
+          <SkillBox>
+            <SkillGroup>
+              <SkillData>
+                <Check />
+                <div>
+                  <SkillName>Express</SkillName>
+                  <SkillLevel>Intermediate</SkillLevel>
+                </div>
+              </SkillData>
+
+              <SkillData>
+                <Check />
+                <div>
+                  <SkillName>Node Js</SkillName>
+                  <SkillLevel>Intermediate</SkillLevel>
+                </div>
+              </SkillData>
+
+              <SkillData>
+                <Check />
+                <div>
+                  <SkillName>MySQL</SkillName>
+                  <SkillLevel>Basic</SkillLevel>
+                </div>
+              </SkillData>
+            </SkillGroup>
+
+            <SkillGroup>
+              <SkillData>
+                <Check />
+                <div>
+                  <SkillName>MongoDB</SkillName>
+                  <SkillLevel>Intermediate</SkillLevel>
+                </div>
+              </SkillData>
+
+              <SkillData>
+                <Check />
+                <div>
+                  <SkillName>AWS</SkillName>
+                  <SkillLevel>Beginner</SkillLevel>
+                </div>
+              </SkillData>
+
+              <SkillData>
+                <Check />
+                <div>
+                  <SkillName>Docker</SkillName>
+                  <SkillLevel>Beginner</SkillLevel>
+                </div>
+              </SkillData>
+            </SkillGroup>
+          </SkillBox>
+        </SkillContent>
       </SkillsContainer>
     </CommonSection>
   );
