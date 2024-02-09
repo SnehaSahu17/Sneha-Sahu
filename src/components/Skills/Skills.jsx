@@ -4,7 +4,7 @@ import {
   CommonSection,
   CommonTitle,
   CommonSubTitle,
-} from "../../common/Styles";
+} from "../../common/GlobalStyles";
 import styled from "styled-components";
 import FrontEnd from "./FrontEnd";
 import BackEnd from "./BackEnd";
@@ -12,16 +12,14 @@ import AnimatedText from "../AnimatedText";
 const Skills = () => {
   return (
     <CommonSection>
-     
-        <AnimatedText
-          text="Skills"
-          className=" !text-6xl sm:!text-6xl xs:!text-4xl sm:mb-2 sm:mt-10"
-        />
-        <AnimatedText
-          text="My technical skills"
-          className="mb-10 sm:mb-0 !text-2xl  "
-        />
-     
+      <AnimatedText
+        text="Skills"
+        className=" !text-6xl sm:!text-6xl xs:!text-4xl sm:mb-2 sm:mt-10"
+      />
+      <AnimatedText
+        text="My technical skills"
+        className="mb-10 sm:mb-0 !text-2xl  "
+      />
 
       <SkillsContainer>
         <FrontEnd />
@@ -56,7 +54,7 @@ const SkillsContainer = styled(Grid)`
   @media screen and (max-width: 576px) {
     /* TODO: does not work */
     grid-template-columns: 1fr;
-    margin:1rem;
+    margin: 1rem;
   }
 
   /* For small devices */

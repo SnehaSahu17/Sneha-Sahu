@@ -1,6 +1,5 @@
 import Image from "next/image";
-import maze from "../../public/images/projects/maze.png";
-import { GithubIcon } from "@/components/NavBar/Icons";
+import { GithubIcon } from "@/components/Icons";
 import Link from "next/link";
 function Card({ src, title, key_techs, description, github, link }) {
   return (

@@ -8,6 +8,7 @@ import Skills from "../components/Skills/Skills";
 import TransitionEffect from "../components/TransitionEffect";
 import Qualification from "../components/Qualifications/Qualifications";
 
+
 const about = () => {
   return (
     <>
@@ -25,7 +26,7 @@ const about = () => {
           />
           <div className="xl:w-full max-w-7xl flex sm:flex-col ">
             <div className=" xl:w-[90%] w-[50%] mx-auto flex flex-col items-start sm:text-sm lg:text-sm text-xl sm:mt-5 xl:text-justify justify-start lg:mt-20 xl:mt-5 mt-20">
-              <p className="font-medium ">
+              <p className="font-medium">
                 Hi, I'm <b>Sneha Sahu</b>, a web developer with a passion for
                 creating beautiful, functional, and user-centered digital
                 experiences.

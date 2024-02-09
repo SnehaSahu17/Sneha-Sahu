@@ -16,8 +16,7 @@ export const SkillContent = styled.div`
 export const ProjectContent = styled.div`
   padding: 1rem;
   height: 27rem;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid #bababa;
   border-radius: 1.5rem;
   /* For medium devices */
   @media screen and (max-width: 576px) {

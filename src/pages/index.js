@@ -2,12 +2,13 @@ import Layout from "../components/Layout";
 import React, { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import profile2 from "../../public/images/profile/profile2.png";
+import Avatar from "../../public/images/profile/Avatar.png";
 import AnimatedText from "../components/AnimatedText";
 import Link from "next/link";
-import { LinkArrow } from "../components/NavBar/Icons";
+import { LinkArrow } from "../components/Icons";
 import HireMe from "../components/HireMe";
 import TransitionEffect from "../components/TransitionEffect";
+import { TypeAnimation } from "react-type-animation";
 import {
   HeroContainer,
   HeroWrapper,
@@ -15,8 +16,7 @@ import {
   HeroRight,
   ScrollDown,
   ScrollLink,
-} from "@/components/CssElements";
-import { TypeAnimation } from "react-type-animation";
+} from "../components/CssElements";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,7 +39,7 @@ export default function Home() {
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/3 md:w-1/2">
               <Image
-                src={profile2}
+                src={Avatar}
                 alt="Sneha Sahu Avatar"
                 className="w-full h-auto  md:inline-block md:w-full"
                 priority
@@ -106,10 +106,9 @@ export default function Home() {
                 />
               </div>
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-                As a skilled Frontend Developer, I am dedicated to turning ideas
-                into innovative web applications. Explore my latest projects and
-                articles, showcasing my expertise in React.js and Frontend
-                development.
+                As a skilled Full Stack Developer, I am dedicated to turning
+                ideas into innovative web applications. Explore my latest
+                projects and articles, showcasing my expertise using MERN stack.
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link

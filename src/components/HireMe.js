@@ -1,12 +1,13 @@
 import React from "react";
-import { CircularText } from "./NavBar/Icons";
+import { CircularTextDark, CircularTextLight } from "./Icons";
 import Link from "next/link";
 
 const HireMe = () => {
   return (
     <div className="fixed  bottom-4 flex items-center justify-center overflow-hidden right-16  sm:-top-20   sm:-right-4 sm:bottom-auto lg:top-[50%] top-[42%]">
       <div className="w-80 h-auto flex items-center justify-center relative md:w-52">
-        <CircularText />
+        <CircularTextLight />
+        <CircularTextDark />
         <Link
           href="mailto:s.sneha1712@gmail.com"
           className="flex items-center justify-center absolute

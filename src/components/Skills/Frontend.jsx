@@ -8,7 +8,7 @@ import {
   SkillName,
   SkillLevel,
 } from "./styles";
- import { Check } from "../NavBar/Icons";
+import { Check } from "../Icons";
 
 const FrontEnd = () => {
   return (

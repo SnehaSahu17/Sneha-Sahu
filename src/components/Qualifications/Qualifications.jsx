@@ -6,9 +6,9 @@ import {
   CommonTitle,
   CommonSubTitle,
   H3Title,
-} from "../../common/styles";
+} from "../../common/GlobalStyles";
 import AnimatedText from "../AnimatedText";
-import { Bag, Calendar, Cap, Score } from "../NavBar/Icons";
+import { Bag, Calendar, Cap, Score } from "../Icons";
 
 const Qualification = () => {
   const [isActive, setIsActive] = useState(true);
@@ -29,7 +29,7 @@ const Qualification = () => {
       />
       <AnimatedText
         text="My personel journey"
-        className="mb-10 sm:mb-0 !text-2xl  "
+        className="mb-10 sm:mb-10 !text-2xl sm:!text-xl "
       />
 
       <QualificationContainer>
@@ -73,7 +73,7 @@ const Qualification = () => {
                 <div>
                   <H3Title>Student Mentor</H3Title>
                   <QualificationSubTitle>
-                    nstitute Counselling Services(ICS)
+                    Institute Counselling Services(ICS)
                   </QualificationSubTitle>
                   <QualificationCalendar>
                     <Calendar></Calendar> Dec 2022 - present
@@ -176,9 +176,8 @@ const QualificationTab = styled.div`
 `;
 
 const ButtonLink = styled.div`
- 
   display: flex;
-  gap:0.5rem;
+  gap: 0.5rem;
   margin: 1rem;
   border-bottom: ${({ isActive }) => (isActive ? "2px solid #bababa" : "none")};
   cursor: pointer;
@@ -245,7 +244,6 @@ const QualificationCalendar = styled.div`
   font-size: 0.875rem;
   display: flex;
   gap: 0.5rem;
-  
 `;
 
 const QualificationRounder = styled.span`
